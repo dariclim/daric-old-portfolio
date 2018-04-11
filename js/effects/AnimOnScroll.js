@@ -125,7 +125,7 @@
 			var self = this;
 			if( !this.didScroll ) {
 				this.didScroll = true;
-				setTimeout( function() { self._scrollPage(); }, 60 );
+				setTimeout( function() { self._scrollPage(); }, 1000 );
 			}
 		},
 		_scrollPage : function() {
@@ -133,7 +133,7 @@
 			this.items.forEach( function( el, i ) {
 				if( !classie.has( el, 'shown' ) && !classie.has( el, 'animate' ) && inViewport( el, self.options.viewportFactor ) ) {
 					setTimeout( function() {
-						var perspY = scrollY() + getViewportH() / 2;
+						var perspY = scrollY()-getViewportH();
 						self.el.style.WebkitPerspectiveOrigin = '50% ' + perspY + 'px';
 						self.el.style.MozPerspectiveOrigin = '50% ' + perspY + 'px';
 						self.el.style.perspectiveOrigin = '50% ' + perspY + 'px';

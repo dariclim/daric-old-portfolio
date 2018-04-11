@@ -2,12 +2,12 @@
 
 	position: relative;
 
-	list-style: none; overflow:hidden; 
+	list-style: none; overflow:visible; 
 
 	text-align: center;
+    
 
 }
-
 
 
 /* Common style */
@@ -60,7 +60,7 @@
 
 	text-transform: uppercase;
 
-	font-size: 1.25em;
+	
 
 	-webkit-backface-visibility: hidden;
 
@@ -122,7 +122,11 @@
 
 .grid figure h2 {
 
-	word-spacing: -0.15em;
+	/*word-spacing: -0.15em;*/
+    
+    word-spacing: 0;
+    
+    font-size: 36px;
 
 	font-weight:500; color:#FFF;
 
@@ -152,7 +156,7 @@
 
 	letter-spacing: 1px;
 
-	font-size:16px; line-height:22px;
+	font-size: 16px; line-height:22px;
 
 }
 
@@ -181,7 +185,6 @@ figure.effect-oscar {
 
 	background-color:#70708C;
     
-    display: table;
 
 }
 
@@ -201,10 +204,12 @@ figure.effect-oscar img {
 
 figure.effect-oscar figcaption {
     
-    text-align: center;
-    display: table-caption;
-    max-height: 100%; /* demo; set some amount (px or %) if you can */
-    margin: 10px auto
+    position: absolute;
+    top: -1.5em;
+    left: 2em;
+    height: 100%;
+    width: 20em;
+    text-align:left;
     
 	background-color: rgba(58,52,42,0);
 
@@ -212,10 +217,6 @@ figure.effect-oscar figcaption {
 
 	transition: background-color 0.35s;
 
-}
-
-.widefig {
-    padding-top:0%;
 }
 
 
@@ -251,9 +252,9 @@ figure.effect-oscar h2 {
 
 	transition: opacity 0.35s, transform 0.35s;
 
-	-webkit-transform: translate3d(0,-100%,0);
+	-webkit-transform: translate3d(-50%,0,0);
 
-	transform: translate3d(0,-100%,0);
+	transform: translate3d(-50%,0,0);
 
 }
 
@@ -275,9 +276,9 @@ figure.effect-oscar p {
 
 	transition: opacity 0.35s, transform 0.35s;
 
-	-webkit-transform: scale(0);
+	-webkit-transform: translate3d(-20%,0,0);
 
-	transform: scale(0);
+	transform: translate3d(-20%,0,0);
 
 }
 
@@ -351,9 +352,9 @@ figure.effect-oscar:hover img {
 
 	figure.effect-oscar figcaption{ padding:0em}
 
-	figure.effect-oscar h2{ font-size:20px;}
+	figure.effect-oscar h2{ font-size:50px;}
 
-	figure.effect-oscar p{ font-size:13px;  padding:2%; display:block; width:90%; margin:0 auto;}
+	figure.effect-oscar p{ font-size:33px;  padding:2%; display:block; width:90%; margin:0 auto;}
 
 }
 
@@ -364,8 +365,8 @@ figure.effect-oscar:hover img {
 
 	figure.effect-oscar figcaption{ padding:0em}
 
-	figure.effect-oscar h2{ font-size:15px;}
+	figure.effect-oscar h2{ font-size:50px;}
 
-	figure.effect-oscar p{ font-size:13px;  padding:2%; display:block; width:90%; margin:0 auto;}
+	figure.effect-oscar p{ font-size:33px;  padding:2%; display:block; width:90%; margin:0 auto;}
 
 }

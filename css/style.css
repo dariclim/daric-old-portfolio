@@ -24,8 +24,12 @@ html {
 
 .logo {
     max-width: 90px;
+    
 }
 
+body {
+    background-color: #fff;
+}
 
 input, textarea {
 
@@ -55,6 +59,10 @@ body, img,.commentys-form input[type="text"],.commentys-form input[type="email"]
 
 	-webkit-transition: all .2s linear;
 
+}
+
+h1, h2, h3, h4, h5, h6, p, h2 span {
+    font-family:'Rubik', sans-serif;}
 }
 
 
@@ -137,7 +145,7 @@ a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 ::selection {background-color: #fb5353;color: #fff;text-shadow: none;}
 
 /* @font-face {font-family:'Open Sans', sans-serif;} */
-@font-face { font-family:'Rubik', sans-serif;}
+@font-face {font-family:'Rubik', sans-serif;}
 
 /*===== Header ===*/
 
@@ -146,6 +154,7 @@ header[role="header"]{ padding-top:30px; padding-bottom:0px}
 header[role="header"] h1{ padding:0; margin:0}
 
 header[role="header"] h1 > a{ max-width:66px; display:block; float:left}
+
 
 header[role="header"] nav{ padding-top:10px;transition-delay: 0s;
 
@@ -191,17 +200,18 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {top: 10px;
 
 -webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
 
+
 /*===== main ===*/
 
 main[role="main-home-wrapper"],main[role="main-inner-wrapper"] { padding-bottom:90px;}
 
 main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:41px}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[role="main-inner-wrapper"] article[role="pge-title-content"] header{ padding-bottom:40px; padding-top:20px}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[role="main-inner-wrapper"] article[role="pge-title-content"] header{ padding-bottom:70px; padding-top:50px}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header h2,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2{ font-size:46px; line-height:53px; color:#454546; font-weight:500; opacity:1}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2{ font-size:2em; line-height:40px; color:#5D5D5D; font-weight:500; opacity:1}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:80px; color:#419EEA; padding-bottom:20px;}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:3em; font-weight:500; color:#419EEA; padding-bottom:20px; }
 
 main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ 
     font-size:20px; 
@@ -211,7 +221,7 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="ma
 
 /*===== footer ===*/
 
-footer[role="footer"]{ padding-top:100px; padding-bottom:77px}
+footer[role="footer"]{ padding-top:0px; padding-bottom:77px}
 
 footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:66px;}
 
@@ -313,17 +323,13 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 /*== Work Details ==*/
 
-.work-details,.blog-details{ padding:0 69px; margin-top:73px}
+.work-details,.blog-details{ padding:0 69px; margin-top:18px}
 
-.work-details header h2{ color:#343434; font-size:36px; font-weight:800}
+.work-details header h2{ color:#343434; font-size:40px; font-weight:500; margin-bottom:0}
 
-.work-details header a{ display:inline-block; color:#fb5353; font-size:18px;font-weight:800;padding-top:3px}
+.work-details header h3{ display:inline-block; color:#343434; opacity:0.5; font-size:20px;font-weight:300;min-width:500px}
 
-.work-details header a i{ color:#0d0d0d; padding-left:10px}
-
-.work-details header a:hover{ color:#0d0d0d; text-decoration:none}
-
-.work-details header a:hover i{ color:#fb5353}
+.work-details header h3 i{ color:#0d0d0d; padding-left:10px}
 
 .work-details p{ font-size:16px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:300}
 
@@ -332,6 +338,14 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 .work-images{ margin-top:46px}
 
 .work-images li{ margin-bottom:50px}
+
+.work-images li.hover-shadow {
+    transition: 0.3s
+}
+
+.work-images .hover-shadow:hover {
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
 
 /*== Blog Details ==*/
 
